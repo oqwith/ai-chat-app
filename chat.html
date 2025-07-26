@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-header">
+    <button class="back-btn" onclick="goBack()">← Back</button>
+    <span id="chat-title">Chat</span>
+  </div>
+
+  <div id="chat" class="chat-area"></div>
+
+  <div class="chat-input">
+    <input type="text" id="message" placeholder="Type a message..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

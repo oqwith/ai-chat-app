@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Contacts</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="contacts-header">AI Contacts</div>
+  <div class="contact-list">
+    <div class="contact" onclick="openChat('Luna')">
+      <img src="https://i.imgur.com/okL6K3k.png" class="avatar">
+      <span>Luna</span>
+    </div>
+    <div class="contact" onclick="openChat('Mika')">
+      <img src="https://i.imgur.com/1AdHQsU.png" class="avatar">
+      <span>Mika</span>
+    </div>
+    <div class="contact" onclick="openChat('Yui')">
+      <img src="https://i.imgur.com/7ZqMeXe.png" class="avatar">
+      <span>Yui</span>
+    </div>
+  </div>
+
+  <script>
+    function openChat(name) {
+      localStorage.setItem('chatWith', name);
+      window.location.href = 'chat.html';
+    }
+  </script>
+</body>
+</html>
